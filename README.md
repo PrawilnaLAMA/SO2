@@ -23,10 +23,12 @@ Program składa się z trzech głównych plików:
 
 ## Wątki i ich reprezentacja
 Program używa wątków do reprezentacji filozofów. Każdy filozof działa w osobnym wątku:
+```c++
 philosophers.emplace_back([this, i]() {
     Philosopher p(i, forks[i], forks[(i + 1) % numPhilosophers]);
     p.philosopherLife();
 });
+```
 
 ## Sekcje krytyczne i ich rozwiązanie
 - **Mutexy dla widelców**: Każdy widelec jest reprezentowany przez mutex, co zapewnia, że filozofowie nie będą jednocześnie go używać.
