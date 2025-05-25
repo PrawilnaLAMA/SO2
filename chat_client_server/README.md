@@ -1,4 +1,4 @@
-# 🧾 Dokumentacja techniczna — Projekt czatu klient-serwer (C++ / WinSock)
+# Dokumentacja techniczna — Projekt czatu klient-serwer (C++ / WinSock)
 
 ## Problem komunikacji klient–serwer
 
